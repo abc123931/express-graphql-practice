@@ -1,0 +1,12 @@
+type Query {
+  tags: [Tag]!
+}
+
+type Mutation {
+  addTag(name: String!): Tag
+}
+
+type Tag {
+  id: String!
+  name: String!
+}

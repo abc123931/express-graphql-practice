@@ -1,0 +1,14 @@
+overwrite: true
+schema:
+  - ./src/graphql/schema.graphql
+documents: null
+config:
+  namingConvention:
+    typeNames: change-case#pascalCase
+    enumValues: change-case#upperCase
+generates:
+  ./src/types.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-resolvers
